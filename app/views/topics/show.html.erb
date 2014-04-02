@@ -1,0 +1,24 @@
+<b>
+  Title: <%=@topic.name %>
+  <br>
+  Created By: <%=@topic.user.email %>
+</b>
+<br>
+<br>
+<br>
+<% @topic.replies.each do |reply| %>
+  Reply
+  <br>
+  Title: <%=reply.title %>
+  <br>
+  <%=reply.user.email %> says:
+  <br>
+  <%=reply.body %>
+  <br>
+  <br>
+<% end %>
+<br>
+<br>
+<%=link_to "Reply to this post", new_topic_reply_path(@topic) %>
+
+<%=link_to "Back to all topics", topics_path %>

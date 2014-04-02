@@ -1,0 +1,11 @@
+<h1>Topics</h1>
+<br>
+<% @topics.each do |topic| %>
+  Title: <%=link_to topic.name, topic_path(topic) %>
+  <br>
+  Created By: <%=topic.user.email %>
+  <br>
+  <br>
+<% end %>
+
+<%=link_to "New Topic", new_topic_path %>

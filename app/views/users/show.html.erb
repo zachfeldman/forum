@@ -1,0 +1,14 @@
+<h1>Your Profile</h1>
+
+Name: <%=current_user.full_name %>
+<br>
+Email: <%=current_user.email %>
+<br>
+<br>
+Topics:
+<br>
+<% current_user.topics.each do |topic| %>
+  <%=link_to topic.name, topic_path(topic) %>
+<% end %>
+
+<%=link_to "Create a new topic", new_topic_path %>

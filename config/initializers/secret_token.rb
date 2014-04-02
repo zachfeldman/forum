@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Forum::Application.config.secret_key_base = '897b9f21c4156c9c26a7db7680eb0289646d37db949d433bfffae16e6c9c5245c24712cd583470c9263d0f90a0767c0e37b96124d0c3cc0fe9c4b90994386645'
+Forum::Application.config.secret_key_base = 'caaadb768042d975f86836dea5a3aa3b27edd1aca83fd7c791ca021c6e1acfbf3dd70a33f1035992cc9310293646d450527d3fae65003066c31088d58db0a893'
